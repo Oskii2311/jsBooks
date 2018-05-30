@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" type="text/css" href="style/style.css" />
+
+    <script type="text/javascript" src="books.json"></script>
+
+    <title>Książki o Javascript</title>
+</head>
+
+<body>
+    <header>
+        <h1 class='heading'>
+            <div class="wrapper">
+                <div class="logo">
+                    <div class="content">JS</div>
+                </div>'owe książki
+            </div>
+        </h1>
+    </header>
+
+    <hr class="dotted" />
+
+    <div class="container">
+
+        <aside class="menu">
+            <h2>Sortuj po</h2>
+            <ul class="sort">
+                <li><input name="sort" id='sortByPage' type="radio"> ilości stron</li>
+                <li><input name="sort" id='sortByDate' type="radio"> dacie wydania</li>
+                <li><input name="sort" id='sortByAuthor' type="radio"> nazwisku autora</li>
+            </ul>
+            <hr />
+
+            <h2>Pokaż tylko</h2>
+            <ul class="sort">
+                <li>Powyżej <input type="number" class="amountPageInput"> stron</li>
+            </ul>
+            <hr />
+            <div class="btnDiv">
+                <button class="styledButton">Wyczyść</button></div>
+        </aside>
+        <main id='main' class='showedBooksContent'>
+        </main>
+        <div class="something"></div>
+    </div>
+
+    <footer></footer>
+
+    <div id='fullPop' class='popWrapper'>
+        <div id='back' class='popBackground'></div>
+        <div id='pop' class='popContent'><button class='btn'>x</button></div>
+    </div>
+    
+    <script src="/js/arrayHelper.js"></script>
+    <script src="/js/httpHandler.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

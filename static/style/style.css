@@ -1,0 +1,279 @@
+/* lato-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Light"), local("Lato-Light"), url("./fonts/lato/lato-v14-latin-ext_latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-300.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-300.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-300.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-300.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+/* lato-300italic - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-300italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url("./fonts/lato/lato-v14-latin-ext_latin-300italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-300italic.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-300italic.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-300italic.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-300italic.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+/* lato-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"), url("./fonts/lato/lato-v14-latin-ext_latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-regular.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-regular.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-regular.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+/* lato-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Italic"), local("Lato-Italic"), url("./fonts/lato/lato-v14-latin-ext_latin-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-italic.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-italic.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-italic.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-italic.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+/* lato-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Bold"), local("Lato-Bold"), url("./fonts/lato/lato-v14-latin-ext_latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-700.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-700.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-700.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-700.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+/* lato-700italic - latin-ext_latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/lato/lato-v14-latin-ext_latin-700italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url("./fonts/lato/lato-v14-latin-ext_latin-700italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lato/lato-v14-latin-ext_latin-700italic.woff2") format("woff2"), url("./fonts/lato/lato-v14-latin-ext_latin-700italic.woff") format("woff"), url("./fonts/lato/lato-v14-latin-ext_latin-700italic.ttf") format("truetype"), url("./fonts/lato/lato-v14-latin-ext_latin-700italic.svg#Lato") format("svg");
+  /* Legacy iOS */ }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEE;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
+.container {
+  display: flex; }
+  .container aside {
+    width: 10%;
+    white-space: nowrap;
+    margin-left: 25px; }
+  .container main {
+    width: 80%;
+    flex-wrap: wrap;
+    padding-left: 20px; }
+  .container .something {
+    width: calc(10%-45px); }
+
+h1 {
+  margin: 15px 15px 25px 15px; }
+
+.sort {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px; }
+
+.info {
+  list-style-type: none; }
+
+.author,
+.title {
+  font-size: 14px; }
+
+.title {
+  font-weight: bold; }
+
+.author {
+  font-style: italic; }
+
+.amountPageInput {
+  width: 35px;
+  height: 30px;
+  margin: 0 5px 0px 5px;
+  border: none; }
+
+.dotted {
+  border: 0;
+  border-bottom: 1px dashed #ccc; }
+
+.wrapper {
+  font-size: 25px; }
+  .wrapper .logo {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    white-space: nowrap;
+    background-color: #FAD84A;
+    text-align: right; }
+  .wrapper .logo .content {
+    position: absolute;
+    bottom: -4px;
+    right: 0px; }
+
+.btnDiv {
+  text-align: center; }
+
+.styledButton {
+  border: none;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #AAA;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-top: 5px; }
+
+img {
+  height: 200px;
+  width: 65%;
+  max-width: 150px;
+  cursor: pointer; }
+
+#back {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7; }
+
+#pop {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  z-index: 15;
+  top: 25%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  background-image: url("https://covers.oreillystatic.com/images/9780596000486/lrg.jpg");
+  background-size: 90% 80%;
+  background-repeat: no-repeat; }
+
+*:focus {
+  outline: none; }
+
+.btn {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #AAA; }
+
+.btn:hover {
+  background-color: aliceblue;
+  cursor: pointer; }
+
+#fullPop {
+  display: none; }
+
+main {
+  display: flex; }
+  main div {
+    display: flex; }
+  main .img {
+    display: inline; }
+
+.item {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 20px 50px 5px;
+  width: 30%;
+  height: 320px;
+  display: inline; }
+
+.info {
+  font-size: 12px;
+  margin: 0;
+  padding: 0; }
+
+a:link {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px dashed #ff0000; }
+
+.number {
+  color: #AAA;
+  font-size: 40px; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 45%;
+    margin-right: 5px; }
+
+  .container aside {
+    width: 20%; }
+  .container main {
+    width: 80%; }
+
+  .something {
+    display: none; } }
+@media only screen and (max-width: 760px) {
+  .container {
+    display: inline; }
+    .container aside {
+      width: calc(100% - 45px); }
+    .container main {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+
+  .styledButton {
+    margin-bottom: 20px; }
+
+  #pop {
+    width: 300px;
+    height: 500px; } }
+@media only screen and (max-width: 550px) {
+  .item {
+    width: 100%;
+    margin-right: 0;
+    height: 210px;
+    display: flex; }
+
+  p {
+    margin: 0;
+    padding: 0; }
+
+  .img {
+    width: 90%;
+    display: block; }
+
+  .nextTo {
+    width: 40%;
+    text-align: center;
+    display: inline-block; }
+
+  .number {
+    width: 10%;
+    margin-left: 5px; } }
+
+/*# sourceMappingURL=style.css.map */

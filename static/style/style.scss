@@ -1,0 +1,280 @@
+@import "fonts";
+$darkBg: #AAA;
+$lightBg: #EEE;
+$imgHeight: 200px;
+$imgWidth: 65%;
+$imgMaxWidth: 150px;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lightBg;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+
+    .menu {
+        width: 10%;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+
+    .showedBooksContent {
+        width: 80%;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .something {
+        width: calc(10%-45px);
+    }
+}
+
+.heading {
+    margin: 15px 15px 25px 15px;
+}
+
+.sort {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.info {
+    list-style-type: none;
+}
+
+.author,
+.title {
+    font-size: 14px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.author {
+    font-style: italic;
+}
+
+.amountPageInput {
+    width: 35px;
+    height: 30px;
+    margin: 0 5px 0px 5px;
+    border: none;
+}
+
+.dotted {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.wrapper {
+    font-size: 25px;
+    .logo {
+        display: inline-block;
+        position: relative;
+        height: 40px;
+        width: 40px;
+        white-space: nowrap;
+        background-color: #FAD84A;
+        text-align: right;
+    }
+    .logo .content {
+        position: absolute;
+        bottom: -4px;
+        right: 0px;
+    }
+}
+
+.btnDiv {
+    text-align: center;
+}
+
+.styledButton {
+    border: none;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: $darkBg;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.booksImg {
+    height: $imgHeight;
+    width: $imgWidth;
+    max-width: $imgMaxWidth;
+    cursor: pointer;
+}
+
+.popBackground {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.popContent {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    z-index: 15;
+    top: 25%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    background-image: url("https://covers.oreillystatic.com/images/9780596000486/lrg.jpg");
+    background-size: 90% 80%;
+    background-repeat: no-repeat;
+}
+
+*:focus {
+    outline: none;
+}
+
+.btn {
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid $darkBg;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.popWrapper {
+    display: none;
+}
+
+.showedBooksContent {
+    display: flex;
+    div {
+        display: flex;
+    }
+    .img {
+        display: inline;
+    }
+}
+
+.item {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 20px 50px 5px;
+    width: 30%;
+    height: 320px;
+    display: inline;
+}
+
+.info {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dashed #ff0000;
+}
+
+.number {
+    color: $darkBg;
+    font-size: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item {
+        width: 45%;
+        margin-right: 5px;
+    }
+    .container {
+        .menu {
+            width: 20%;
+        }
+        .showedBooksContent {
+            width: 80%;
+        }
+    }
+    .something {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        display: inline;
+        .menu {
+            width: calc(100% - 45px);
+        }
+        .showedBooksContent {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .styledButton {
+        margin-bottom: 20px;
+    }
+    .popContent {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .item {
+        width: 100%;
+        margin-right: 0;
+        height: 210px;
+        display: flex;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .img {
+        width: 90%;
+        display: block;
+    }
+    .nextTo {
+        width: 40%;
+        text-align: center;
+        display: inline-block;
+    }
+    .number {
+        width: 10%;
+        margin-left: 5px;
+    }
+}
